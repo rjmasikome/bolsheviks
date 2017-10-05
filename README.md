@@ -1,7 +1,7 @@
 # bolsheviks
 Manager for workers of Cronjob via REST
 
-This is based on express, as for now, it only get the cronjob from crontab, but the ability to modify it will come soon.
+This is based on express. It will get the cronjob, add a new one or delete it. Disclaimer: This is just hoby hack, responsibility of the risks held by the user who use this.
 
 ### Requirement
 * Use express
@@ -28,4 +28,15 @@ app.use(worker);
 app.use(router);
 app.listen(port);
 console.log(`Proletariat is listening to port ${port}, navigate to ${path}`);
+```
+
+### CURL example
+* `POST`
+```
+curl -X POST -H 'Content-Type: application/json' -d '{"command": "ls -la", "cron": "0 7 * * *"}' http://localhost:8080/workers
+```
+
+* `DELETE`
+```
+curl -X DELETE http://localhost:8080/workers/1
 ```

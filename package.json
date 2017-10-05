@@ -1,6 +1,6 @@
 {
   "name": "bolsheviks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Manager for workers of Cronjob via REST",
   "main": "lib/index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "express": "^4.16.1"
   },
   "devDependencies": {
+    "body-parser": "^1.18.2",
     "nodemon": "^1.12.1"
   }
 }

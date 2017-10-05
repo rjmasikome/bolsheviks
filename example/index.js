@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const Bolsheviks = require("../lib");
 
 const app = new express();
@@ -11,6 +12,7 @@ router.use("/", (req, res) => {
   res.send(`Navigate to ${path}`);
 })
 
+app.use(bodyParser.json());
 app.use(worker);
 app.use(router);
 app.listen(port);
