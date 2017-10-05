@@ -1,7 +1,7 @@
 # bolsheviks
 Manager for workers of Cronjob via REST
 
-This is based on express, as for now, it only get the cronjob from crontab, but the ability to modify it will come soon. Default path
+This is based on express, as for now, it only get the cronjob from crontab, but the ability to modify it will come soon.
 
 ### Requirement
 * Use express
