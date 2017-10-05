@@ -1,15 +1,3 @@
-# bolsheviks
-Manager for workers of Cronjob via REST
-
-This is based on express, as for now, it only get the cronjob from crontab, but the ability to modify it will come soon. Default path
-
-### Requirement
-* Use express
-* Have something on crontab
-* Node 8 and above (bleeding edge #lit)
-
-### How to use
-```js
 const express = require("express");
 const Bolsheviks = require("../lib");
 
@@ -27,4 +15,3 @@ app.use(worker);
 app.use(router);
 app.listen(port);
 console.log(`Proletariat is listening to port ${port}, navigate to ${path}`);
-```

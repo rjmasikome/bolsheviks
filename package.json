@@ -1,0 +1,33 @@
+{
+  "name": "bolsheviks",
+  "version": "0.0.0",
+  "description": "Manager for workers of Cronjob via REST",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "example/index.js",
+    "dev": "nodemon example/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmasikome/bolsheviks.git"
+  },
+  "keywords": [
+    "cron",
+    "job",
+    "worker"
+  ],
+  "author": "Rian Josua Masikome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjmasikome/bolsheviks/issues"
+  },
+  "homepage": "https://github.com/rjmasikome/bolsheviks#readme",
+  "dependencies": {
+    "crontab": "^1.1.3",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
