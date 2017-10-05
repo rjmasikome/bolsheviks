@@ -7,11 +7,12 @@ This is based on express, as for now, it only get the cronjob from crontab, but 
 * Use express
 * Have something on crontab
 * Node 8 and above (bleeding edge #lit)
+* `npm install bolsheviks`
 
 ### How to use
 ```js
 const express = require("express");
-const Bolsheviks = require("../lib");
+const Bolsheviks = require("bolsheviks");
 
 const app = new express();
 const port = 8080;
